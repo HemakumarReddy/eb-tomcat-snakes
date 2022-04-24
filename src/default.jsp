@@ -28,7 +28,7 @@
   <body>
     <tagfiles:header />
     <div id="hate" class="container snakes snake-hater">
-      <h1 class="cover-heading">Welcome To DevOps Training B19 Batch</h1>
+      <h1 class="cover-heading">Welcome To DevOps Training B19 Batch In Telugu</h1>
       <iframe src="https://giphy.com/embed/KTCh8fg6KgoLu" width="480" height="403" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/telugu-KTCh8fg6KgoLu">via GIPHY</a></p><p class="lead">By Sreeharsha Veerapalli from HYD</p>
       <!--Intro -->
       <h2>Do you or a loved one hate snakes?</h2>
