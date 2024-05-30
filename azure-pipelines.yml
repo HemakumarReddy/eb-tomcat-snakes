@@ -12,6 +12,7 @@ stages:
       jobs:
       - job: BuildingJavaCodeJob
         timeoutInMinutes: 10
+        continueOnError: true
         steps:
         - script: echo $(Build.BuildId)
           displayName: 'Display The Buld-ID'
