@@ -50,20 +50,3 @@ stages:
              TargetFolder: '/tmp/artifacts'
              OverWrite: true
           continueOnError: true
-              
-    - stage: CopyingArtifactsToAzureAndAws
-      jobs:
-      - job: CopyFilesToAzureBlob
-        timeoutInMinutes: 10
-        steps:
-        - checkout: none
-
-        - task: AzureCLI@2
-          inputs:
-            azureSubscription: 'devopsb19-azure-connection'
-            scriptType: 'bash'
-            scriptLocation: 'inlineScript'
-            inlineScript: 
-              az storage blob upload-batch --account-name devopsb19adoartifacts --account-key $(STORAGE_ACCOUNT_KEY) --destination artifacts --source /tmp/artifacts/
-          displayName: 'Azure Upload artifacts to Azure Blob'
-          continueOnError: true
